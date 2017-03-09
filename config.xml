@@ -1,21 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget 
-id="com.phonegap.helloworld" 
+id="com.example.app" 
 version="1.1.0" 
 xmlns="http://www.w3.org/ns/widgets" 
 xmlns:gap="http://phonegap.com/ns/1.0">
 
     <name>Erda Player App</name>
     <description>
-        A blank PhoneGap app.
+        Erda Player App.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="me@gegeriyadi.com" href="http://gegeriyadi.com">
+        Gege Riyadi
     </author>
     <content src="index.html" />
     <access origin="*" />
-<plugin name="cordova-plugin-media" spec="~3.0.0" />
+    <plugin name="cordova-plugin-media" spec="~3.0.0" />
+
+    <preference name="orientation" value="portrait" />
 </widget>
-<activity
-    android:screenOrientation="portrait" >
-</activity>
