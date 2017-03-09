@@ -1,6 +1,11 @@
-<?xml version='1.1' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>master</name>
+<?xml version='1.0' encoding='utf-8'?>
+<widget 
+id="com.phonegap.helloworld" 
+version="1.1.0" 
+xmlns="http://www.w3.org/ns/widgets" 
+xmlns:gap="http://phonegap.com/ns/1.0">
+
+    <name>Erda Player App</name>
     <description>
         A blank PhoneGap app.
     </description>
@@ -9,7 +14,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <gap:plugin name="org.apache.cordova.media" />
+<plugin name="cordova-plugin-media" spec="~3.0.0" />
 </widget>
 <activity
     android:screenOrientation="portrait" >
