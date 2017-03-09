@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="css/zen.css">
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>   
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.rotate.js"></script>
     <script type="text/javascript" src="js/jquery.grab.js"></script> 
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
@@ -45,27 +45,6 @@
 </div>
 
 <footer><p>Erdamah APK v2.0</p></footer>
-
-<script>
-  var start = function() {
-    screen.orientation.lock('landscape-primary').then(
-      startInternal,
-      function() {
-        alert('To start, rotate your screen to landscape.');
-
-        var orientationChangeHandler = function() {
-          if (!screen.orientation.type.startsWith('landscape')) {
-            return;
-          }
-          screen.orientation.removeEventListener('change', orientationChangeHandler);
-          startInternal();
-        }
-
-        screen.orientation.addEventListener('change', orientationChangeHandler);
-      });
-  }
-  window.onload = start;
-</script>
 
   </div>
 </div>
